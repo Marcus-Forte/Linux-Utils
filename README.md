@@ -2,15 +2,15 @@
 
 Where the files are supposed to be
 
-vimrc -> ~/.vimrc
+vimrc -> ~/.vimrc  
+xinitrc --> ~/.xinitrc  
+Xresources --> ~/.Xresources  
+i3config --> ~/.config/i3/config  
+i3statusconfig --> ~/config/i3status/config  
 
-xinitrc --> ~/.xinitrc
+* downloading singe flie 
 
-Xresources --> ~/.Xresources
-
-i3config --> ~/.config/i3/config
-
-i3statusconfig --> ~/config/i3status/config
+curl -o ~/filename https://raw.githubusercontent.com/Marcus-Davi/Linux-dotfiles/master/i3config
 
 
 * Installing .vimrc 

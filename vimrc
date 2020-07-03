@@ -1,6 +1,7 @@
 syntax on
 set nu rnu
 set tabstop=4 softtabstop=4
+set showcmd
 
 
 

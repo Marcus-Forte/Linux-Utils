@@ -1,4 +1,9 @@
-# Linux DotFiles
+# Linux Utils
+
+Basic Linux Information/Dotfiles/Tips
+
+
+# Dotfiles
 
 Where the files are supposed to be
 

@@ -13,12 +13,12 @@ Xkbmap --> ~/.Xkbmap
 
 * downloading singe flie 
 
-curl -o ~/filename https://raw.githubusercontent.com/Marcus-Davi/Linux-dotfiles/master/i3config
+curl -o ~/filename https://raw.githubusercontent.com/Marcus-Davi/Linux-Utils/master/Dotfiles/i3config
 
 
 * Installing .vimrc 
 
-curl -o ~/.vimrc https://raw.githubusercontent.com/Marcus-Davi/Linux-dotfiles/master/vimrc
+curl -o ~/.vimrc https://raw.githubusercontent.com/Marcus-Davi/Linux-Utils/master/Dotfiles/vimrc
 
 * Todo : A script that loads them all ?
 

@@ -1,0 +1,30 @@
+------ Pacman ------
+
+
+pacman -S 'pkg1' 'pkg2' -> instala pacota 'pkg'
+ 'y' sincroniza repos
+ 'u' atualiza pacotes
+ 'c' limpa cache
+ 'i' informacoes do pacote 
+
+pacman -R 'pkg1' 'pkg2' -> desinstala pacotes 'pkg1'  ...
+ 's' remove dependencias so do pacote
+ 'c' remove dependecias do pacote e possivelmente de outros (cuidado)
+ 'u' remove grupos com dependencias
+ 'd' ou 'dd' remove dependencia sem remover pacote dependente
+ 'n' remove config files do pacman
+
+pacman -Q 'pkg1' ... -> informacoes de pacotes instalados
+ 's' lista pacotes instalados
+ 'i' informacoes do pacote 
+ 'l' arquivos do pacote
+ 'd' pacotes instlados por dependencia
+ 't' pacotes nao usados como dependencias (combinado com '-d' lista os orfaos)
+ 'e' pacotes instalados explicitamente(combinado com 't' lista os pacotes instalados manualmente)
+ 'q' quiet, menos informacoes
+
+
+combinações 
+
+pacman -Qdtq | sudo pacman -Rcsn -    -> remove pacotes inuteis
+pacman -Syyuu -> atualiza TUDO

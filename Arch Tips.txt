@@ -26,5 +26,7 @@ pacman -Q 'pkg1' ... -> informacoes de pacotes instalados
 
 combinações 
 
+pacman -Qe -> lista pacotes instalados explicitamente
 pacman -Qdtq | sudo pacman -Rcsn -    -> remove pacotes inuteis
 pacman -Syyuu -> atualiza TUDO
+pacman -Qq | grep <pacote>-* | sudo pacman -Rns - -> remove REGEX

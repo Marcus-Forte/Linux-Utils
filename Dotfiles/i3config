@@ -181,6 +181,10 @@ bar {
         status_command i3status
 }
 
+#brightness
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
 
 #scrachpad
 bindsym $mod+Shift+minus move scratchpad

@@ -192,6 +192,10 @@ bindsym $mod+Shift+minus move scratchpad
 # scratchpad
 bindsym $mod+minus scratchpad show
 
+#print screen
+bindsym Print exec maim -s ~/Pictures/img_$(date +%s).png 
+bindsym Shift+Print exec maim -s | xclip -selection clipboard -t image/png
+
 #touchpad ON
 exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 

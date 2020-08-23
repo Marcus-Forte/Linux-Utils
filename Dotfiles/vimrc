@@ -65,3 +65,5 @@ let mapleader = " "
 :nnoremap <silent> <leader>j :resize +5<CR>
 
 nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
+
+let g:ycm_clangd_args=['--header-insertion=never']

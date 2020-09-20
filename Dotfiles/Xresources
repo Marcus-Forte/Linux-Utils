@@ -1,8 +1,13 @@
-xterm*Foreground:white
-xterm*Background:black
-xterm*faceName: LiberationMono
-xterm*faceSize: 11
-
-XTerm.vt100.translations: #override \n\
-	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
-	Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+xterm.termName: xterm-256color
+xterm.vt100.locale: true
+xterm.vt100.background: black
+xterm.vt100.foreground: lightgray
+xterm.vt100.reverseVideo: false
+xterm.vt100.faceName: DejaVu Sans Mono
+xterm.vt100.faceSize: 12
+xterm.vt100.scrollBar: true
+xterm.vt100.selectToClipboard: true
+! n funciona ..
+xterm.vt100.translations: #override \n\
+				Ctrl <Key>m: maximize() \n\
+				Ctrl <Key>r: restore()

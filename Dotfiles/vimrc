@@ -1,7 +1,9 @@
 syntax on
+set encoding=utf-8
 set nu rnu
 set tabstop=4 softtabstop=4
 set showcmd
+set clipboard+=unnamedplus
 set completeopt-=preview " annoying window
 
 

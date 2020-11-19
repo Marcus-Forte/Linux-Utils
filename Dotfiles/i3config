@@ -202,3 +202,6 @@ exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
 #screen save
 bindsym $mod+Ctrl+l exec i3lock && sleep 1 && xset s activate
+
+# shutdown
+bindsym $mod+F12 exec shutdown now

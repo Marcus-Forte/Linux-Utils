@@ -90,7 +90,7 @@ https://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-net
 
 
 --------------
-
+```
 auto eth0
 iface eth0 inet static
 	address 192.168.0.3
@@ -110,7 +110,7 @@ wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 #	network 192.168.1.0
 #	broadcast 192.168.1.255
 
-
+```
 ------------------
 
 Network Commands

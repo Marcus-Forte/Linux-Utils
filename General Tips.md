@@ -140,3 +140,6 @@ gst-launch-1.0 -vv udpsrc port=8888 caps="video/x-raw,width=160,height=120"  ! v
 
 #jpeg
 gst-launch-1.0 -vv udpsrc port=8888 ! jpegdec  ! xvimagesink
+
+#LAPTOP lid close / login / power config
+/etc/systemd/logind.conf

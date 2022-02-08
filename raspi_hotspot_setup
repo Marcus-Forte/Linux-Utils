@@ -1,0 +1,354 @@
+    1  ip a
+    2  nmcli
+    3  apt show nmcli
+    4  apt show NetworkManager
+    5  sudo apt install network-manager
+    6  sudo apt update
+    7  sudo apt install network-manager
+    8  nmcli
+    9  sudo reboot
+   10  nmcli
+   11  nmcli con add type bridge ifname br0
+   12  sudo nmcli con add type bridge ifname br0
+   13  sudo nmcli con add type bridge-slave ifname eth0 master br0
+   14  nmcli
+   15  sudo nmcli con add type bridge-slave ifname eth0x master br0
+   16  nmcli
+   17  sudo nmcli con add type bridge-slave ifname eth0x master br02
+   18  nmcli
+   19  sudo nmcli con delete bridge-br0 bridge-slave-eth0*
+   20  sudo nmcli con delete bridge-br0 bridge-slave-*
+   21  sudo nmcli con delete bri*
+   22  sudo nmcli con delete bridge-slave-eth0
+   23  sudo nmcli con delete bridge-slave-eth0x
+   24  sudo nmcli con delete bridge-slave-eth0x-1
+   25  sudo nmcli con add type bridge ifname br0
+   26  nmcli
+   27  sudo nmcli con add type bridge-slave ifname eth0 master br0 connection.autoconnect yes
+   28  nmcli
+   29  sudo nmcli con modify br0
+   30  sudo nmcli con
+   31  sudo nmcli con mod bridge-br0
+   32  sudo nmcli con mod bridge-br0 connection.autoconnect yes
+   33  sudo nmcli con mod bridge-br0 stp no
+   34  nmcli
+   35  sudo nmcli con show bridge-br0
+   36  sudo nmcli con show bridge-slave-eth0
+   37  nmcli
+   38  sudo nmcli con add Hotspot
+   39  sudo nmcli con add Hotspot ifname wlan0 type wifi
+   40  sudo nmcli con add a
+   41  sudo nmcli con add con-name hotspot ifanme wlan0 type wifi slave-type bridge master br0 wifi.band a wifi.mode ap wifi.ssid herminotauro-sala
+   42  sudo nmcli con add con-name hotspot ifname wlan0 type wifi slave-type bridge master br0 wifi.band a wifi.mode ap wifi.ssid herminotauro-sala
+   43  nmcli
+   44  nmcli con
+   45  sudo nmcli con up br0
+   46  sudo nmcli con up bridge-
+   47  sudo nmcli con up bridge-br0
+   48  nmcli con
+   49  nmcli
+   50  nmcli con mod bridge-slave-eth0 master bridge-br0
+   51  sudo nmcli con mod bridge-slave-eth0 master bridge-br0
+   52  nmcli con mod bridge-slave-eth0 master bridge-br0
+   53  nmcli
+   54  sudo nmcli con mod bridge-slave-eth0 master bridge-br0
+   55  nmcli
+   56  sudo nmcli con up br0
+   57  sudo nmcli con up bridge-br0
+   58  nmcli
+   59  nmcli con
+   60  nmcli con show bridge-slave-eth0
+   61  sudo nmcli con up bridge-slave-eth0
+   62  nmcli con
+   63  ip a
+   64  nmcli
+   65  ping 192.168.2.2
+   66  ip a
+   67  sudo nmcli con add ethernet
+   68  sudo nmcli con add ifname eth0
+   69  sudo nmcli con add ifname eth0 type ethernet
+   70  ip a
+   71  sudo nmcli con up ethernet-eth0
+   72  ip a
+   73  nmcli con show ethernet-eth0
+   74  nmcli con show bridge-slave-eth0
+   75  nmcli con show bridge-br0
+   76  sudo nmcli con delete hotspot
+   77  ip a
+   78  sudo nmcli
+   79  sudo systemctl restart network-manager
+   80  sudo systemctl restart network-online.target
+   81  systemctl start network-manager
+   82  ip a
+   83  sudo nmcli con up bridge-
+   84  sudo nmcli con up bridge-br0
+   85  sudo nmcli con down ethernet-eth0
+   86  nmcli
+   87  ip a
+   88  sudo nmcli con reload help
+   89  sudo nmcli con reload
+   90  sudo nmcli con mod ethernet-eth0 autoconnect yes
+   91  sudo nmcli con reload
+   92  ip a
+   93  nmcli
+   94  sudo nmcli con up ethernet-eth0
+   95  sudo nmcli con down ethernet-eth0
+   96  sudo nmcli con delete bridge-slave-eth0
+   97  nmcli
+   98  sudo nmcli con down bridge-br0
+   99  ip a
+  100  nmcli
+  101  sudo systemctl restart networking.service
+  102  nmcli
+  103  sudo nmcli con down eth0
+  104  ip a
+  105  nmcli
+  106  sudo nmcli con delete eth0
+  107  sudo nmcli con delete ethernet-eth0
+  108  sudo nmcli con delete bridge-br0
+  109  sudo nmcli
+  110  sudo nmcli con add con-name ethernet0 ifname eth0 ipv4.method auto
+  111  sudo nmcli con add con-name ethernet0 ifname eth0 ipv4.method auto type ethernet
+  112  nmcli
+  113  sudo nmcli con up ethernet0
+  114  nmcli
+  115  sudo apt update
+  116  sudo apt install libpcl-dev
+  117  df -h
+  118  sudo nmcli con add con-name my-bridge type bridge ifname br0
+  119  sudo nmcli con add type bridge-slave ifname eth1 master br0
+  120  nmcli
+  121  sudo nmcli con up my-bridge
+  122  nmcli
+  123  sudo nmcli con up bridge-slave-eth1
+  124  sudo nmcli con mod bridge-slave-eth1 ifname eth0
+  125  sudo nmcli con mod bridge-slave-eth1 con-name bridge-slave-eth0
+  126  sudo nmcli con up bridge-slave-eth0
+  127  nmcli
+  128  nmcli con up my-bridge
+  129  nmcli
+  130  nmcli con up my-bridge
+  131  nmcli con up ethernet0
+  132  nmcli
+  133  sudo nmcli con up bridge-slave-eth0
+  134  sudo nmcli con mod bridge-slave-eth0 master br0
+  135  sudo nmcli con mod bridge-slave-eth0 slave-type bridge
+  136  nmcli
+  137  sudo nmcli con mod bridge-slave-eth0 slave-type
+  138  sudo nmcli con mod bridge-slave-eth0 slave-type team
+  139  nmcli
+  140  sudo nmcli con add con-name my-hostspot type bridge-slave ifname wlan0
+  141  sudo nmcli con add con-name my-hostspot type bridge-slave ifname wlan0 master br0
+  142  nmcli
+  143  sudo nmcli con up my-hostspot
+  144  sudo nmcli con mod my-hostspot slave-type bridge
+  145  sudo nmcli con up my-hostspot
+  146  sudo nmcli con up wlan0
+  147  sudo nmcli con up my-bridge
+  148  nmcli
+  149  sudo nmcli con up my-hostspot
+  150  sudo nmcli con mod my-bridge stp no
+  151  nmcli
+  152  sudo nmcli con up my-hostspot
+  153  ip
+  154  ip a
+  155  sudo nmcli con edit my-hostspot
+  156  sudo nmcli con mod my-hostspot connection.type
+  157  sudo nmcli con mod my-hostspot connection.type m
+  158  sudo nmcli con mod my-hostspot connection.type wifi
+  159  sudo nmcli con delete my-hotspot
+  160  sudo nmcli connection delete my-hostspot
+  161  sudo nmcli con add con-name hotspot type wifi slave-type bridge mast
+  162  sudo nmcli con add con-name hotspot type wifi slave-type bridge master br0 wifi.mode ap wifi.ssid hermino
+  163  nmcli
+  164  sudo nmcli con up hotspot
+  165  sudo nmcli con mod hotspot ifname wlan0
+  166  sudo nmcli con add con-name hotspot type wifi slave-type bridge master br0 wifi.mode ap wifi.ssid hermino
+  167  nmcli
+  168  nmcli con -
+  169  nmcli con
+  170  sudo nmcli con del hotspot
+  171  sudo nmcli con add con-name hotspot type wifi slave-type bridge master br0 wifi.mode ap wifi.ssid hermino ifname wlan0
+  172  sudo nmcli con up hotspot
+  173  sudo nmcli con down all
+  174  sudo nmcli con down bridge-slave-eth0
+  175  nmcli
+  176  sudo nmcli con down br0
+  177  sudo nmcli con down my-bridge
+  178  nmcli
+  179  sudo nmcli con down eth0
+  180  sudo nmcli con down ethernet0
+  181  sudo nmcli con mod ethernet0 autoconnect no
+  182  nmcli c
+  183  sudo nmcli con up hotspot
+  184  sudo nmcli con edit hotspot
+  185  sudo nmcli con up hotspot
+  186  sudo nmcli con up bridge-slave-eth0
+  187  sudo nmcli con up hotspot
+  188  nmcli con
+  189  sudo nmcli
+  190  sudo nmcli con up br0
+  191  sudo nmcli con up my-bridge
+  192  sudo nmcli con up br0
+  193  sudo nmcli
+  194  sudo nmcli con up br0
+  195  sudo nmcli con up my-bridge
+  196  nmcli
+  197  sudo nmcli con delete my-bridge
+  198  sudo nmcli con delete sl
+  199  sudo nmcli con delete bridge-slave-eth0
+  200  sudo nmcli con up hotspot
+  201  sudo nmcli con del hotspot
+  202  ip a
+  203  sudo nmcli con up eth0
+  204  sudo nmcli con up ethernet0
+  205  ip a
+  206  sudo nmcli con add con-name hotspot ifname wlan0 type wifi wifi.mode ap wifi.band a wifi.ssid hermino
+  207  sudo nmcli con up hotspot
+  208  sudo nmcli con add con-name hotspot ifname wlan0 type wifi wifi.mode ap wifi.band a wifi.ssid hermino ipv4.method auto
+  209  sudo nmcli con delete  hotspot
+  210  sudo nmcli con add con-name hotspot ifname wlan0 type wifi wifi.mode ap wifi.band a wifi.ssid hermino ipv4.method auto
+  211  nmcli con up hotspot
+  212  systemctl status dhcpcd.service
+  213  systemctl status wpa_supplicant.service
+  214  sudo systemctl stop wpa_supplicant.service
+  215  sudo systemctl stop dhcpcd.service
+  216  nmcli con up hotspot
+  217  systemctl status wpa_supplicant.service
+  218  sudo systemctl stop dhcpcd.service
+  219  systemctl status wpa_supplicant.service
+  220  sudo nmcli con reload
+  221  nmcli con up hotspot
+  222  nmcli con up hotspot ap
+  223  nmcli
+  224  sudo nmcli con delete hotspot
+  225  sudo nmcli con add con-name hotspot ifname wlan0 type wifi wifi.mode ap wifi.band a wifi.ssid hermino ipv4.method auto
+  226  nmcli con up hotspot ap
+  227  nmcli con up hotspot
+  228  sudo apt purge dhcpcd5
+  229  cat /etc/network/interfaces
+  230  cat /etc/dhcp/
+  231  sudo reboot
+  232  cat /etc/NetworkManager/NetworkManager.conf
+  233  sudo vim /etc/NetworkManager/NetworkManager.conf
+  234  sudo nano /etc/NetworkManager/NetworkManager.conf
+  235  ip a
+  236  nmcli
+  237  sudo nmcli con
+  238  sudo nmcli con ethernet0
+  239  sudo nmcli con up ethernet0
+  240  ip a
+  241  nmcli
+  242  sudo nmcli con mod ethernet0 autoconnect yes
+  243  nmcli
+  244  sudo nmcli con up hotspot
+  245  nmcli con
+  246  sudo nmcli con edit hotspot
+  247  sudo nmcli con up hotspot
+  248  tmux
+  249  ip a
+  250  sudo apt install tmux
+  251  reboot
+  252  nmcli
+  253  sudo nmcli con up hotspot
+  254  sudo nmcli con mod hotspot
+  255  sudo nmcli con mod hotspot ipv4.method shared
+  256  sudo nmcli con mod hotspot ipv4.addresses 10.10.10.1
+  257  sudo nmcli con up hotspot
+  258  nmcli
+  259  sudo nmcli con up hotspot
+  260  sudo nmcli con mod hotspot ipv4.addresses 10.10.10.1,
+  261  sudo nmcli con mod hotspot ipv4.addresses 10.10.10.1,23f
+  262  sudo nmcli con mod hotspot ipv4.addresses 10.10.10.1,10.10.10.10
+  263  sudo nmcli con up hotspot
+  264  sudo nmcli con mod hotspot 802-11-wireless.mode ap
+  265  sudo nmcli con mod hotspot 802-11-wireless.band bg
+  266  sudo nmcli con mod hotspot ipv4.method shared
+  267  sudo nmcli con mod hotspot wifi-sec.key-mgmt wpa-psz
+  268  sudo nmcli con mod hotspot wifi-sec.key-mgmt wpa-psk
+  269  sudo nmcli con mod hotspot wifi-sec.psk Quartz123
+  270  sudo nmcli con up Ho
+  271  sudo nmcli con up hotspot
+  272  reboot
+  273  ip a
+  274  nmcli
+  275  sudo nmcli con mod hotspot ipv4.addresses 10.10.10.1/24
+  276  sudo service network-manager restart
+  277  sudo apt purge openresolv
+  278  nmcli
+  279  sudo nmcli con mod hotspot autoconnect yes
+  280  sudo nmcli con mod hotspot wifi.ssid Herminotauro-Sala
+  281  reboot
+  282  nmcli
+  283  sudo apt install openresolv
+  284  nmcli
+  285  reboot
+  286  nmcli
+  287  Quartz123
+  288  ip a
+  289  top
+  290  sudo nmcli con mod hotspot ipv4.method auto
+  291  nmcli
+  292  sudo nmcli con reload
+  293  nmcli
+  294  sudo nmcli con down hotspot
+  295  sudo nmcli con up hotspot
+  296  sudo systemctl status openresol
+  297  sudo systemctl status openresolv
+  298  sudo systemctl status openresolvd
+  299  dpkg -L openresolv
+  300  sudo apt purge openresolv
+  301  nmcli
+  302  sudo nmcli con mod hotspot ipv4.method shared
+  303  sudo nmcli con mod hotspot ipv4.addresses
+  304  sudo nmcli con show hotspot ipv4.addresses
+  305  sudo nmcli con up hotspot
+  306  nmcli
+  307  sudo nmcli con add con-name bridge type bridge ifname br1
+  308  sudo nmcli con add con-name bridge type bridge ifname br0
+  309  sudo nmcli con del bridge
+  310  sudo nmcli con add con-name bridge type bridge ifname br0
+  311  nmcli
+  312  sudo nmcli con add type bridge-slave ifname eth0 master br0
+  313  nmcli
+  314  sudo nmcli con down eth0
+  315  sudo nmcli con down ethernet0
+  316  sudo nmcli con down hotspot
+  317  nmcli
+  318  ip a
+  319  sudo nmcli con up br0
+  320  sudo nmcli con up bridge
+  321  nmcli
+  322  ip
+  323  ip a
+  324  nmcli con show bridges
+  325  nmcli con show bridge-slave-eth0
+  326  nmcli
+  327  ip a
+  328  sudo nmcli con clone hotspot bridge-hotspot
+  329  sudo nmcli con edit bridge-hotspot
+  330  sudo nmcli con mod bridge stp no
+  331  sudo nmcli con mod bridge-hotspot slave-type bridge
+  332  sudo nmcli con mod bridge-hotspot slave-type bridge master br0
+  333  nmcli
+  334  sudo nmcli con mod bridge-hotspot ipv4
+  335  sudo nmcli con mod bridge-hotspot ipv4.method
+  336  sudo nmcli con mod bridge-hotspot ipv4.method auto
+  337  nmcli
+  338  reboot
+  339  nmcli
+  340  sudo nmcli con down hotspot
+  341  sudo nmcli con mod hotspot autoconnect no
+  342  nmcli con
+  343  sudo nmcli con up bridge-hotspot
+  344  sudo nmcli con mod bridge-hotspot wifi-sec.psk Quartz123
+  345  sudo nmcli con up bridge-hotspot
+  346  nmcli
+  347  sudo nmcli con mod bridge-hotspot autoconnect yes
+  348  nmcli con show bridge
+  349  nmcli con show bridge-slave-eth0
+  350  reboot
+  351  history
+  352  ls
+  353  sudo apt install git
+  354  history

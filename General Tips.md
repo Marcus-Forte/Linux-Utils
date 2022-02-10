@@ -52,11 +52,11 @@ sudo systemctl set-default graphical.target
 
 
 # SSH Tunneling
-#primeiro IP é o primário "Servidor"
-#-L -> binda a porta '2201' na maquina local à maquina "10.10.10.123:22"
+primeiro IP é o primário "Servidor"
+-L -> binda a porta '2201' na maquina local à maquina "10.10.10.123:22"
 ssh -L 2201:10.10.10.123:22 davi@181.221.217.141
 
-#msm coisa mas nao abre terminal pro servidor (util pra scripts)
+msm coisa mas nao abre terminal pro servidor (util pra scripts)
 ssh -nNT -L 2201:10.10.10.123:22 davi@181.221.217.141 
 
 

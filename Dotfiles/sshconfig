@@ -1,4 +1,8 @@
 # 'Host' can be used in shell to map different users. check below.
+
+# IdentityFile ~/.ssh/id_rsa
+# IdentitiesOnly yes
+
 Host github-duna
 	Hostname github.com
 	User git
